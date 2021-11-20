@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+section {
+    margin-top: 70px;
+    padding: 0 15px;
+    height: fit-content;
+    margin-bottom: 30px;
+    border-bottom: 5px solid var(--oenBrownColor);
+    border-radius: 50px;
+}
+    section .clear {
+        clear: both;
+    }
+.img-book {
+    width: 200px;
+    float: right;
+    margin-left: 15px;
+    filter: contrast(0.8); 
+    border-radius: 20px;
+}
+
+.text-book {
+    width: 55%;
+    height: 200px;
+    margin-left: 15px;
+    margin-top: 15px;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    direction: rtl;
+    float: right;
+    text-align: center;
+    font-family: 'Markazi Text', serif;}
+
+.many-img {
+    min-width: 50px;
+    max-width: 250px;
+}
+    .many-img img {
+        width: 60px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+        .many-img img:hover {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            z-index: 11;
+        }
+    /* Title */
+.here-title {direction: rtl;}
+h2 {
+    color: #000;
+    font-weight: bold;
+    border-bottom: solid 4px;
+    border-bottom-color: var(--threeBlueColor,rgb(53, 168, 224));
+    font-size: 2rem;
+    text-align: right;
+    display: table;
+    direction: rtl;
+    margin: 10px auto;
+    position: relative;
+}
+    h2::before {
+        content: "";
+        border-style: solid;
+        border-color: transparent var(--oenBrownColor) transparent transparent;
+        border-width: 10px;
+        position: absolute;
+        right: -22px;
+        top: 10px;
+    }
+    
+                /* Download and Reading Book */
+.link-in-book {
+    background-color: green;
+    padding: 7px 18px;
+    width: 90px;
+    border-radius: 5px;
+    margin: 15px 15px 15px 0;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+}
+    .link-in-book:hover {
+        box-shadow: 0 0 11px 0px #008000b8;
+    }
+                /* data --> [name + leaf + مساحة ] */
+.data {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-left: -50px;
+    font-size: 1.1rem;
+    color: var(--oenBrownColor);
+    direction: rtl;
+}
+    .data span {
+        color: brown;
+    }
+            /* shera and fol */
+.text-book .folw {
+    color: var(--oenBrownColor);
+    margin-top: 20px;
+    font-size: 1.3rem;
+    line-height: 50px;
+}
+    .text-book .folw a {
+        line-height: 18px;
+    }
+        .text-book .folw img {
+            width: 25px;
+            height: 25px;
+            border-radius: 15px;
+        }
+
+
+        /* New Books */
+.text {
+    margin-top: 0;
+}

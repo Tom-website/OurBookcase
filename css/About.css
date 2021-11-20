@@ -1,0 +1,63 @@
+    /* about */
+.about {
+    direction: rtl;
+}
+    /* Title-about */
+.about .title-about {
+    color: rgb(59, 27, 0);
+    margin-top: 70px;
+
+}
+p.text-about {
+    color: #925f36;
+    word-spacing: 2px;
+    font-size: 1.2rem;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 25px;
+    font-family: 'Markazi Text', serif;
+}
+    .about hr {
+    background-color: var(--threeBlueColor,rgb(53, 168, 224));
+    height: 5px;
+    width: 80%;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    margin: 15px auto;
+}
+    /* Talk-Together */
+.talk-together {
+    text-align: center;
+    color: var(--oenBrownColor);
+    word-spacing: 2px;
+    font-size: 1.2rem;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+    .talk-together a {
+        background-color: var(--oenBrownColor);
+        padding: 10px 15px;
+        border-radius: 10px;
+        color: #000;
+    }
+        .talk-together a:hover {
+             box-shadow: 0 0 10px var(--twoBrownColor);
+             text-shadow: 0 0 10px var(--twoBrownColor);
+        }
+        /* my Copye */
+.talk-together p span {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.4rem;
+    transition: .4s ease;
+}
+    .talk-together p span:hover {
+        text-shadow: 0 0 10px var(--twoBrownColor);
+    }
+        /* margin-bottom */
+.margin-bottom {
+    margin-bottom: -50px;
+}

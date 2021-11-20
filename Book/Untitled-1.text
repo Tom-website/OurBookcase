@@ -1,0 +1,298 @@
+* {
+margin: 0;
+padding: 0;
+}
+/* section */
+section {
+display: grid;
+height: 80vh;
+grid-template-columns: repeat(9, 1fr);
+grid-template-rows: auto auto auto auto;
+padding-right: 2%;
+grid-template-areas:
+"title title title title title title title title title"
+". . text text text text . img img"
+". . . here-2 . here-1 . hr-1 hr-1"
+". . . . . . . hr-2 hr-2";
+}
+/* name */
+section h2.title-book {
+grid-area: title;
+color: #000;
+font-weight: bold;
+/* border-bottom: solid 4px;
+border-bottom-color: rgb(53, 168, 224);
+font-size: 2rem; */
+text-align: right;
+display: inline-block;
+direction: rtl;
+margin: 10px 40px 20px;
+position: relative;
+font-size: 1.85rem;
+margin-top: 70px;
+}
+section h2.title-book::before {
+content: "";
+border-style: solid;
+border-color: transparent #925f36 transparent transparent;
+border-width: 10px;
+position: absolute;
+right: -22px;
+top: 10px;
+}
+section h2.title-book::after {
+content: "";
+position: absolute;
+width: 100%;
+height: 4px;
+border-radius: 5px;
+background-color: rgb(53, 168, 224);
+top: 79%;
+right: 0;
+width: 30vh;
+}
+/* img */
+section img {
+grid-area: img;
+}
+/* text-book */
+section .text-book {
+grid-area: text;
+text-align: center;
+line-height: 1.2rem;
+word-spacing: .3rem;
+margin-top: 20px;
+}
+/* p */
+section .hr-1 {
+grid-area: hr-1;
+text-align: right;
+}
+section .hr-2 {
+grid-area: hr-2;
+text-align: right;
+}
+/* hr */
+section .hr-1,
+section .hr-2 {
+color: #925f36;
+font-weight: bold;
+margin-right: 10%;
+}
+section .hr-1 span,
+section .hr-2 span {
+color: brown;
+font-weight: bold;
+text-indent: 40px;
+}
+/* button */
+section button {
+outline: none;
+border: none;
+background-color: green;
+padding: 0;
+border-radius: 5px;
+transition: .4s ease;
+}
+section button:hover {
+background-color: rgb(43, 197, 43);
+box-shadow: 0 0 10px 1px rgb(43 197 43 / 62%);
+}
+section .link-here-1 {
+grid-area: here-1;
+}
+section .link-here-2 {
+grid-area: here-2;
+}
+section button a {
+padding: 10px 30px;
+color: #fff;
+font-weight: bold;
+font-family: 'Cairo', sans-serif;
+line-height: 1rem;
+}
+section button a:hover {
+text-decoration: none;
+}
+/* much of text */
+section a {
+text-decoration: none;
+color: rgb(53, 93, 222);
+font-family: 'Amiri', serif;
+font-size: 1.1rem;
+letter-spacing: 0;
+line-height: 2.2rem;
+}
+section a:hover {
+text-decoration: revert;
+}
+section img {
+width: 95%;
+height: 290px;
+border-radius: 20px;
+transition: .4s ease;
+filter: contrast(80%);
+}
+section img:hover {
+filter: contrast(100%);
+}
+
+/* text */
+.text {
+margin: 10px 0;
+}
+
+
+
+
+
+/* html */
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Bookcase-ar</title>
+    <!-- link-css -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/books.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- links header -->
+    <link rel="stylesheet" href="../css/reset.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header-3.css" />
+    <!--Book-->
+    <link rel="stylesheet" href="../css/book.css">
+    <!-- font header -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <!-- End font header -->
+    <!-- font text-many-thing -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <!-- End font text-many-thing -->
+    <!-- font my-name -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- End font my-name -->
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="site-header">
+        <div class="wrapper site-header__wrapper">
+            <div class="site-header__start">
+                <a href="index.html" class="brand">Our Bookcase</a>
+            </div>
+            <div class="site-header__end">
+                <nav class="nav">
+                    <button class="nav__toggle" aria-expanded="false" type="button">
+
+                    </button>
+                    <ul class="nav__wrapper">
+                        <li class="nav__item"><a href="index.html" class=".one">Home</a></li>
+                        <li class="nav__item"><a href="books.html">Books</a></li>
+                        <li class="nav__item"><a href="About.html">About</a></li>
+                        <li class="nav__item"><a href="#" class="En-Ar">En</a></li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <button class="search__toggle" aria-label="Open search">
+                        Search
+                    </button>
+                    <form class="search__form" action="">
+                        <label class="sr-only" for="search">Search</label>
+                        <input type="search" name="" id="search" placeholder="ابحث عن اسم كتابك" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <section>
+        <h2 class="title-book">كتاب العادات الذرية</h2>
+        <img src="../image/header-books-img/book-9.jpg">
+        <p class="text-book">أأيًا كانت أهدافك فإن كتاب "العادات الذرية" يقدم لك إطار عمل من أجل تطوير مهاراتك في كل
+            يوم.
+            جيمس كلير
+            واحد من أبرز الخبراء في مجال اكتساب العادات، يوضح لنا في كتابه هذا استراتيجيات عملية تعلمنا كيف نستطيع
+            اكتساب عادات جيدة، وكيف نتخلص من القديمة السلبية، ويشرح لنا طريقة إدارة وإتقان أفعالنا اليومية البسيطة
+            التي نستطيع من خلالها تحقيق نتائج مذهلة.
+
+            يعلمنا هذا الكتاب:
+
+            كيف نخلق الوقت من أجل اكتساب عادات جديدة
+
+            كيف نتخلص من نقص الحافز، ونتمتع بقوة الإرادة
+
+            كيف نغير بيئتنا المحيطة لتحقيق نتائج إيجابية في الحياة
+        </p>
+        <p class="hr-1">الكاتب: <span>احمس</span></p>
+        <br>
+        <p class="hr-2">عدد الصفحة: <span>900</span></p>
+        <button class="link-here-1"><a href="http://">تحميل</a></button>
+        <button class="link-here-2"><a href="http://">مشاهدة</a></button>
+    </section>
+    <hr>
+    <!-- new-book -->
+    <div class="text">
+        <div class="text-new-book">
+            <p>احدث الكتب</p>
+        </div>
+        <div class="books">
+            <div class="book">
+                <a href="http://"><img src="image/header-books-img/book-1.jpg" alt=""></a>
+            </div>
+            <div class="book">
+                <a href="http://"><img src="image/header-books-img/book-2.png" alt=""></a>
+            </div>
+            <div class="book">
+                <a href="http://"><img src="image/header-books-img/book-3.jpg" alt=""></a>
+            </div>
+            <div class="book">
+                <a href="http://"><img src="image/header-books-img/book-4.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="links">
+            <a href="new-books.html" class="link">&lt;&lt; المزيد</a>
+        </div>
+        <!-- End new-book -->
+        <hr>
+        <!-- top-book -->
+        <div class="text-2">
+            <div class="text-new-book">
+                <p>افضل الكتب</p>
+            </div>
+            <div class="books">
+                <div class="book">
+                    <a href="http://"><img src="image/header-books-img/book-1.jpg" alt=""></a>
+                </div>
+                <div class="book">
+                    <a href="http://"><img src="image/header-books-img/book-2.jpg" alt=""></a>
+                </div>
+                <div class="book">
+                    <a href="http://"><img src="image/header-books-img/book-6.png" alt=""></a>
+                </div>
+                <div class="book">
+                    <a href="http://"><img src="image/header-books-img/book-8.png" alt=""></a>
+                </div>
+            </div>
+            <div class="links">
+                <a href="top-books/top-books.html" class="link">&lt;&lt; المزيد</a>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <div class="my-name">Thomas Emad</div>
+                <p>&copy; copyright 2021</p>
+            </div>
+            <script src="../js/header-3.js"></script>
+</body>
+
+</html>

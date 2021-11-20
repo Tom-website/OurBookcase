@@ -1,0 +1,26 @@
+.books {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    margin: 15px 20px;
+}
+.books p,
+.books a {
+    margin: 0;
+}
+.links {
+    margin: 0 0 0 5%;
+}
+
+    /* languages */
+.click {
+    color: #000;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: right;
+    display: inline-block;
+    direction: rtl;
+    position: relative;
+    letter-spacing: 0;
+}

@@ -1,0 +1,19 @@
+.books {
+    justify-content: center;
+}
+.books p {
+    color: #000;
+    font-weight: bold;
+    border-bottom: solid 4px;
+    border-bottom-color: rgb(53, 168, 224);
+    font-size: 2rem;
+    text-align: right;
+    display: inline-block;
+    direction: rtl;
+    margin: 10px 40px 10px;
+    position: relative;
+}
+    .books p a:hover {
+        color: var(--oenBrownColor);
+    }
+
