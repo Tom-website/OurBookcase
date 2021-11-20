@@ -60,6 +60,7 @@ section .par {
   }
   .text-book {
     width: 97%;
+    margin: 15px auto;
   }
   .box-information {
     width: 100%;
