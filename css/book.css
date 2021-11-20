@@ -5,17 +5,18 @@
 section {
     margin-top: 70px;
     padding: 0 15px;
-    height: fit-content;
     margin-bottom: 30px;
     border-bottom: 5px solid var(--oenBrownColor);
     border-radius: 50px;
 }
-    section .clear {
-        clear: both;
-    }
+section .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
 .img-book {
     width: 200px;
-    float: right;
+    height: 380px;
     margin-left: 15px;
     filter: contrast(0.8); 
     border-radius: 20px;
@@ -23,31 +24,55 @@ section {
 
 .text-book {
     width: 55%;
-    height: 200px;
-    margin-left: 15px;
     margin-top: 15px;
     line-height: 1.5rem;
     font-size: 1.1rem;
     direction: rtl;
-    float: right;
     text-align: center;
     font-family: 'Markazi Text', serif;}
 
-.many-img {
+.box-information {
     min-width: 50px;
     max-width: 250px;
 }
-    .many-img img {
-        width: 60px;
+    .box-information img {
+        width: 32.274%;
         border-radius: 5px;
         cursor: pointer;
     }
-        .many-img img:hover {
+        .box-information img:hover {
             width: 500px;
             height: 500px;
             position: absolute;
             z-index: 11;
         }
+section .par {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+      /* All Media */
+@media (max-width: 768px) {
+  section .container {
+    flex-direction: column;
+  }
+  .img-book {
+    margin: auto;
+  }
+  .text-book {
+    width: 97%;
+  }
+  .box-information {
+    width: 100%;
+    margin: auto;
+  }
+  section .par {
+    display: flex;
+    flex-direction: column;
+  }
+  section .data {
+    margin-left: 0;
+  }
+}
     /* Title */
 .here-title {direction: rtl;}
 h2 {
@@ -73,15 +98,23 @@ h2 {
     }
     
                 /* Download and Reading Book */
+.dow {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 10px;
+}
 .link-in-book {
     background-color: green;
     padding: 7px 18px;
     width: 90px;
     border-radius: 5px;
-    margin: 15px 15px 15px 0;
+    /* margin: 15px 15px 15px 0; */
     text-align: center;
     display: inline-block;
     font-weight: bold;
+}
+section .download {
+  margin-left: 15px;
 }
     .link-in-book:hover {
         box-shadow: 0 0 11px 0px #008000b8;
@@ -98,6 +131,7 @@ h2 {
     .data span {
         color: brown;
     }
+
             /* shera and fol */
 .text-book .folw {
     color: var(--oenBrownColor);
