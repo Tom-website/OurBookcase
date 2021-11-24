@@ -35,10 +35,16 @@ section .container {
     min-width: 50px;
     max-width: 250px;
 }
-    .box-information img {
-        width: 32.274%;
-        border-radius: 5px;
-        cursor: pointer;
+.box-information .box-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.box-information img {
+  width: 32.274%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
     }
         .box-information img:hover {
             width: 400px;
